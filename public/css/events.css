@@ -1,0 +1,36 @@
+html
+{
+    overflow: -moz-scrollbars-vertical;
+    overflow: scroll;
+}
+
+#event_area
+{
+    overflow-y:scroll;
+    height:500px;
+    max-width: 800px;
+    border: 1px solid #000;
+    margin:auto;
+    margin-bottom: 20px;
+}
+ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+li
+{
+  -moz-user-select: none;
+  height: 350px;
+  margin: 10px;
+  border:1px solid #ccc;
+  background: #c6c6c6;
+  padding: 10px;
+
+}
+li.selected
+{
+    border:1px solid blue;
+}

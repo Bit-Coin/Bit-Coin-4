@@ -1,0 +1,85 @@
+button:hover,
+button:focus
+{
+    outline: none !important;
+}
+h1.title
+{
+	color:#000;
+}
+.box-property
+{
+	padding: 35px 49px;
+	color: #e6f0e9;
+}
+h1.mgb-2em
+{
+	margin-top: 150px;
+}
+@media (max-width: 767px) {
+	h1.mgb-2em
+	{
+		margin-top: 80px;
+	}
+}
+.box-property .btn
+{
+	border:  none;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	padding: 5px 15px;
+	background: rgba(20, 0, 0, 0.13);
+}
+.box-property .btn:hover,
+.box-property .btn:focus
+{
+	color: #bbcedb;
+}
+.box-property i
+{
+	background: rgba(20, 0, 0, 0.13);
+	padding: 7px 8px;
+	border-radius: 100px;
+	width: 40px;
+	height: 40px;
+}
+.support-wrapper
+{
+    padding: 1em;
+}
+.box-i
+{
+    display: inline-block;
+    font-size: 31px;
+    padding: 0.7em 1.7em;
+    color: #fff;
+    background-color: #399cdd;
+	margin-bottom: 0.5em;
+}
+.title-box
+{
+	font-size: 16px;
+}
+@media(max-width: 993px){
+	.box-property
+	{
+		width: 100%;
+	}
+}
+
+.marginbottom100
+{
+	margin-bottom: 100px;
+}
+
+.back-button-wrapper
+{
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+#accordion img.icon
+{
+	height: 20px;
+}

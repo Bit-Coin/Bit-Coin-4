@@ -1,0 +1,156 @@
+/* site nav - horizontal tab menu, with dropdown sub menu */
+#sitenav
+{
+	background: transparent url(/carcontent/sitenav/cs_nav_bg.gif) repeat-x;
+}
+#sitenav b
+{
+    font-weight: bold;
+}
+#sitenav ul
+{
+	font-size: 11px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#sitenav ul li
+{
+	margin: 0;
+	padding: 0;
+}
+#sitenav a
+{
+	display: block;
+}
+#sitenav a b
+{
+	cursor: pointer;
+	color: #404040;
+	height: 25px;
+	line-height: 25px;
+}
+#sitenav .top
+{
+	height:30px;
+	padding-left:1px;
+}
+#sitenav .top-item
+{
+	float: left;
+}
+#sitenav .signin
+{
+	float: right;
+}
+#sitenav .top-item,
+#sitenav .top-item-MemberMenu
+{
+	behavior: url( '/Tig/UI/WebControls/IEMenuDropdown.htc' );	/* behaviour script for IE 6 */
+	background: none;
+	height:30px;
+	margin-right: 0;
+	position: relative;
+	z-index: 100;
+}
+#sitenav .top-item a
+{
+	float: left;
+	height: 30px;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+}
+#sitenav .top-item a b
+{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	border-right: solid 1px silver;
+}
+#sitenav .top-item .sub
+{
+	position: absolute;
+	top: 30px;
+	left: 0;
+	visibility: hidden;
+	width: 150px;
+}
+#sitenav .top-item:hover .sub
+{
+	visibility: visible;
+}
+#sitenav .top-item .sub a
+{
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+	float: none;
+	height: 25px;
+	padding: 0 10px 0 16px;
+	text-align: left;
+	white-space: nowrap;
+}
+#sitenav .top-item .sub a b
+{
+	border-width: 0;
+	color: #fff;
+	display: block;
+	font-weight: normal;
+	float: none;
+	height: 25px;
+	line-height: 25px;
+	padding: 0;
+}
+/* sub menu hover */
+#sitenav .top-item .sub a:hover
+{
+	background: url(/carcontent/sitenav/cs_nav_arrow.gif) no-repeat 6px center;
+}
+#sitenav .last 
+{
+	line-height: 0;
+	font-size: 0;
+}
+#sitenav .last div
+{
+	border-left: solid 1px #fff;
+	border-right: solid 1px #fff;
+	border-bottom: solid 1px #fff;
+	display: block;
+	font-size: 0;
+	height: 1px;
+}
+/* overrides */
+
+/* top menu */
+#sitenav .top-item a,
+#sitenav .top-item a b
+{
+}
+/* top menu hover */
+#sitenav .top-item a:hover,
+#sitenav .top-item:hover a,
+#sitenav .top-item a:hover b,
+#sitenav .top-item:hover a b
+{
+}
+/* current top menu */
+#sitenav .top-item a.current,
+#sitenav .top-item a.current:hover,
+#sitenav .top-item a.current b,
+#sitenav .top-item a.current:hover b
+{
+}
+/* sub menu */
+#sitenav .top-item .sub a,
+#sitenav .top-item .sub a b
+{
+}
+/* sub menu hover */
+#sitenav .top-item .sub a:hover,
+#sitenav .top-item .sub a:hover b
+{
+}

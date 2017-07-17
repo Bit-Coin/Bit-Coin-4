@@ -1,0 +1,199 @@
+.features-list .feature-block
+{
+	margin-bottom: 18px;
+}
+.features-list .feature-block .ico
+{
+	font-size: 37px;
+	line-height: 70px;
+	width:70px;
+	height: 70px;
+	background: #3598db;
+	display: inline-block;
+	border-radius: 50%;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+}
+.features-list .feature-block.bottom-line .ico
+{
+	width: auto;
+	height: auto;
+	background: transparent;
+	color: #5accff;
+	text-align: center;
+	font-size: 41px;
+	vertical-align: top;
+	margin-top: -10px;
+}
+.features-list .feature-block.bottom-line .fa-github
+{
+	font-size: 50px;
+}
+.features-list .feature-block.bottom-line .fa-dashboard
+{
+	font-size: 45px;
+	margin-top: -15px;
+}
+.features-list .feature-block.bottom-line .ico
+{
+	float: left;
+	margin-right: 15px;
+	margin-left: 21px;
+}
+.features-list .feature-block.bottom-line .features-content
+{
+	padding-right: 15px;
+	display: table;
+}
+.features-list .feature-block.bottom-line .features-content .name
+{
+	margin-bottom: 5px;
+}
+.features-list .feature-block.bottom-line .features-content .subname
+{
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+.features-list .feature-block .name
+{
+	font-size: 20px;
+	line-height: 1.25em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.features-list .feature-block .text
+{
+	font-size: 12px;
+	line-height: normal;
+	margin-bottom: 15px;
+}
+.wrapper-testimonial
+{
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+}
+.img-circle
+{
+    border-radius: 50%;
+    border: 1px solid #f0f0f0;
+    padding: 2px;
+}
+
+
+/* Testimonial */
+#quote-carousel
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+	background: none;
+	color: #222;
+	font-size: 2.3em;
+	position: absolute;
+	top: 48%;
+	text-shadow: none;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+	width: 25px;
+	height: 50px;
+}
+/* End carousel */
+
+.item blockquote
+{
+	border-left: none;
+	margin: 0;
+}
+
+.item blockquote img
+{
+	margin-bottom: 10px;
+}
+
+.item blockquote p:before
+{
+	content: "\f10d";
+	font-family: 'Fontawesome';
+	float: left;
+	margin-right: 10px;
+}
+
+.lightblue-back
+{
+    background-color: #f1faff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)
+{
+	#quote-carousel
+	{
+	  margin-bottom: 0;
+	  padding: 0 40px 30px 40px;
+	}
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px)
+{
+	.wrapper-testimonial
+	{
+		width: 100%;
+	}
+	/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+	#quote-carousel .carousel-indicators
+	{
+		bottom: -20px !important;
+	}
+	#quote-carousel .carousel-indicators li
+	{
+		display: inline-block;
+		margin: 0px 5px;
+		width: 15px;
+		height: 15px;
+	}
+	#quote-carousel .carousel-indicators li.active
+	{
+		margin: 0px 5px;
+		width: 20px;
+		height: 20px;
+	}
+}

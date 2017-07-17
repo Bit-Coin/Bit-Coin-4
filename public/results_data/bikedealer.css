@@ -1,0 +1,1407 @@
+/* START remove these lines once we have switched the layout to basic */
+@import "/Design/CommonThemes/layout-wide.css";
+@import "/bikecontent/bikepoint/rainbow.css";
+#site-menu {display:none;} 
+.desktop-3panes #threepanes {float:none; width:auto;}
+.desktop-3panes .showNone .dtDivContentPane {width:auto;}
+/* END remove these linesonce we have switched the layout to basic */
+
+/* ===COMMON=== */
+body, p, th, td, select, input, textarea, div, span
+{
+	font-family:Arial,Verdana,helvetica,san-serif;
+	font-size:12px;
+}
+#desktop 
+{
+	width:660px;
+}
+#site-header, #footer, .dtDivTopPane, .dtDivBottomPane
+{
+	display:none;
+}
+#desktop-footer 
+{
+	padding-top:40px;
+}
+a 
+{
+	color:#333; 
+	text-decoration:underline;
+}
+.c
+{
+	display:none;
+}
+.debug
+{
+	color:red;
+	font-size:11px;
+}
+.row-separator, .row-seperator
+{
+	clear:both;
+}
+#general-error 
+{
+	margin:0 auto;
+	width:990px;
+}
+.rb-module-title
+{
+	background-color:#000;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	padding:5px;
+	position:relative;
+	zoom:1;
+}
+.rb-module-title H1
+{
+	display:inline;
+	font-size:1em;
+}
+.rb-module-btns
+{
+	position:absolute;
+	right:8px;
+}
+.CommandButton 
+{
+	background-color:#ccc;
+	border:solid 1px #aaa;
+	color:#000;
+	display:inline-block;
+	font-weight:bold;
+	font-size:11px;
+	margin:5px 5px 0 0;
+	padding:5px;
+	text-align:center;
+}
+.CommandButton:hover 
+{
+	color:#f00;
+}
+.Head
+{
+	font-weight:bold;
+}
+.dtDivContentPane
+{
+	float:none;
+	margin:0;
+}
+.PowerLogo
+{
+	background:url(/bikecontent/bikesales/powered_by_bikesales.gif);
+	float:right;
+	height:30px;
+	display:block;
+	margin:10px 0 5px;
+	width:120px;
+}
+.footer-summary-list
+{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+/* dealer footer */
+.dealerfooter .dealer-info
+{
+	color:#333;
+}
+.dealerfooter .dealer-info a
+{
+	cursor:pointer;
+}
+.dealerfooter .dealer-info .description
+{
+	color:#fff;
+	background-color:#333;
+	text-align:center;
+	padding:5px;
+	margin:5px 0 10px;
+}
+.dealerfooter .dealer-info .description .title
+{	
+	font-size:16px;
+}
+/* ===COMMON end=== */
+/* ===SEARCH start=== */
+.homepage-searches
+{
+	border:solid 2px #000;
+}
+.bikeforsale
+{
+	padding-bottom:25px;
+}
+.categoryNavigation h1.title,
+.bikeforsale h1.title 
+{
+    background-color:#000;
+    border-top:solid 5px #fff;
+    color:#fff;
+    font-size:16px;
+    line-height:25px;
+    margin:0 5px 20px;
+    padding:0 30px 0 0;
+}
+.categoryNavigation .icon-overlay,
+.bikeforsale .icon-overlay 
+{
+	background:url(/bikecontent/bikesales/landing/icon_search.gif) no-repeat;	
+	float:left;
+	height:47px;
+	margin-left:10px;
+	width:46px;
+	_display:inline; /* IE6 margin doubling bug */
+}
+.bikeforsale .search 
+{
+    margin:10px auto 0;
+    width:350px;
+}
+.bikeforsale dl,
+.bikeforsale dt,
+.bikeforsale dd
+{
+	margin:0;
+	padding:0;
+}
+.bikeforsale dl
+{
+	margin-bottom:3px;
+}
+.bikeforsale dt
+{
+    float:left;
+    font-weight:bold;
+    line-height:20px;
+    margin-right:5px;
+    text-align:right;
+    width:65px;
+}
+.bikeforsale select
+{
+	width:250px;
+}
+.bikeforsale .YearFrom,
+.bikeforsale .PriceFrom,
+.bikeforsale .MileageFrom
+{
+    float:left;
+    width:187px;
+}
+.bikeforsale .YearFrom select,
+.bikeforsale .PriceFrom select,
+.bikeforsale .MileageFrom select
+{
+	width:110px;
+	_width:104px;
+}
+.bikeforsale .YearTo,
+.bikeforsale .PriceTo,
+.bikeforsale .MileageTo
+{
+	clear:right;
+	float:left;
+	width:160px;
+}
+.bikeforsale .YearTo dt,
+.bikeforsale .PriceTo dt,
+.bikeforsale .MileageTo dt
+{
+	width:18px;
+	text-align:center;
+}
+.bikeforsale .YearTo select,
+.bikeforsale .PriceTo select,
+.bikeforsale .MileageTo select
+{
+	width:110px;
+}
+.bikeforsale .search-button
+{
+    float:left;
+    margin-top:6px;
+    margin-left:70px;
+    _display:inline; /* IE6 margin doubling bug */
+}
+.bikeforsale .search-button dt,
+.bikeforsale .reset-button dt
+{
+    display: none;
+}
+.bikeforsale .search-button a
+{
+	background:url(/bikecontent/bikepoint/landing/search_btn.gif) no-repeat;
+	display:block;
+	height:35px;
+	width:137px;
+}
+.bikeforsale .reset-button
+{
+    float:left;
+    margin-top:6px;
+	margin-left:10px;
+}
+.bikeforsale .reset-button a
+{
+	color:#000;
+	display:block;
+	float:left;
+	font-size:11px;
+	text-decoration:underline;
+}
+.categoryNavigation .clear,
+.bikeforsale .clear
+{
+	clear:both;
+	display:block;
+}
+.categoryNavigation .seperator
+{
+    border-left:solid 1px #D0CECC; 
+    float:left;
+    height:100px;
+    margin-bottom:10px;
+}
+.categoryNavigation .category-links
+{
+	margin:0 auto;
+	width:320px;
+}
+.categoryNavigation .categoryItem
+{
+    float:left;
+    min-height:100px; _height:100px;   
+    padding:0 10px;
+    width:130px;
+}
+.categoryNavigation .categoryItem a
+{
+    background:url(/bikecontent/bikepoint/homepage/showroom_arrow_icon.gif) no-repeat left 5px;
+    color:#3D8BC9;
+    cursor:pointer;
+    display:block;
+    text-decoration:none;
+    padding-left:12px;
+    zoom:1;
+}
+.categoryNavigation .categoryItem a .count
+{
+	float:right;
+	_display:inline; /*IE6 margin-doubling bug*/
+}
+.categoryNavigation .categoryItem h3
+{
+	margin:5px 0;
+	padding:0;
+}
+.categoryNavigation .categoryItem ul
+{
+	list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.categoryNavigation .categoryItem li
+{
+    margin:0;
+    padding:0;
+}
+.categoryNavigation hr
+{
+    clear:both;
+    height:1px;
+    margin:10px 5px;
+}
+.categoryNavigation .viewAll-Button
+{
+    background-image:url(/bikecontent/bikepoint/landing/BS_view_all.gif);
+    display:block;
+    float:right;
+    height:30px;
+    margin:0 10px 10px 0;
+    width:88px;
+}
+/* ===SEARCH end=== */
+
+/* ===LISTING start=== */
+.listing-container
+{
+	border:solid 2px #000;
+	margin-bottom:10px;
+	padding:5px;
+}
+/* listing header/footer - start */
+.resultsListing
+{
+	border-top:solid 1px #ccc;
+	border-bottom:solid 1px #ccc;
+}
+.results-header-container
+{
+	background-color:#F5F5F5;
+	zoom:1;
+}
+.results-header-container .rbModuleTitleTxt
+{
+	background:url(/bikecontent/bikesales/results/icon_results.gif) no-repeat;
+	height:47px;
+}
+.results-header-container .rbModuleTitleTxt h1
+{
+	background-color:#000;
+	border-top:solid 16px #F5F5F5;
+	color:#fff;
+	font-size:16px;
+	line-height:21px;
+	margin:0 0 0 46px;
+	padding:0 0 0 10px;
+}
+.results-header
+{
+	background-color:#F5F5F5;	
+}
+.results-header .sort,
+.results-header .sort .options,
+.results-header .sort .go-button
+{
+	float:left;
+	margin-left:8px;
+}
+.results-header .sort .label
+{
+	float:left;
+	font-size:11px;
+	font-weight:bold;
+	line-height:30px;
+	margin-left:0;
+}
+.results-header .sort .options
+{
+	margin-top:4px;
+}
+.results-header .sort .go-button a
+{
+	background:url(/bikecontent/bikepoint/results/go_btn.gif) no-repeat 0 center;
+	display:block;
+	height:28px;
+	outline:none;
+	text-indent:-10000px;
+	width:26px;
+}
+.results-header .pager
+{
+	float:right;
+	line-height:26px;
+	padding:0 10px;
+}
+.results-header .pager .pages
+{
+	padding:0 6px;	
+}
+.results-header .pager .pages span
+{
+	display:none;
+}
+.results-header .pager .pages .current
+{
+	display:inline;
+	font-weight:bold;
+	padding:0 4px;
+}
+.results-header .pager .page
+{
+	color:#000;
+	padding:0 4px;
+}
+.results-header .pager .page:hover
+{
+	color:#f00;
+}
+.results-header .end
+{
+	clear:both;
+	line-height:0;
+	font-size:0;
+}
+.result-footer-container
+{
+	zoom:1;
+}
+.result-footer-container .results-header
+{
+	border-bottom:solid 1px #ccc;
+	height:30px;
+}
+/* listing - common */
+.listing .item
+{
+	border-top:solid 1px #ccc;
+	clear:both;
+    cursor:pointer;
+    display:block;
+	padding:10px;
+    position:relative;
+    text-decoration:none;
+    zoom:1;
+}
+.listing .item:hover
+{
+	background-color:#eee;
+    text-decoration:none;
+}
+.listing h2,
+.listing h3,
+.listing p,
+.listing ul,
+.listing li
+{
+	margin:0;
+	padding:0;
+}
+.listing h2,
+.listing h3 
+{
+    font-size:13px;
+}
+.listing li
+{
+    background:url(/bikecontent/bikesales/item_arrow_icon.gif) no-repeat left center;
+    display:inline;
+	list-style-type:none;
+    padding:0 10px;
+} 
+.listing .condition,
+.listing .seller 
+{
+    bottom:50px;
+    position:absolute;
+    right:10px;
+}
+.listing .state 
+{
+    bottom:10px;
+    line-height:37px;
+    position:absolute;
+    right:133px;
+    margin-right:5px;
+    text-align:right;
+    text-transform:uppercase;
+}
+.listing .details-button 
+{
+    background:url(/bikecontent/bikesales/dsl_dealer_enquiry_btn.gif) no-repeat;
+    bottom:10px;
+    height:37px;
+    position:absolute;
+    right:5px;
+    width:125px;
+}
+.listing .details-button:hover
+{
+	background-position:bottom;
+}
+.listing .header,
+.listing .footer
+{
+	height:20px;
+	padding:10px 0;
+	zoom:1;
+} 
+.listing .footer
+{
+    border-top:1px solid #ccc;
+}
+.listing .clear
+{
+	clear:both;
+	display:block;
+}
+.listing .new-search 
+{
+    background:transparent url(/bikecontent/bikesales/results/dsl_new_search_btn.gif) no-repeat;
+    display:block;
+	float:left;
+    height:19px;
+    outline-style:none;
+    text-indent:-10000px;
+    width:89px;
+}
+.listing .refine-search
+{
+	background:url(/bikecontent/bikesales/results/dsl_refine_search_btn.gif) no-repeat;
+    display:block;
+	float:left;
+	height:19px;
+	margin-right:10px;
+	outline-style:none;
+	text-indent:-10000px;
+	width:98px;
+}
+.listing .flag-topdeal,
+.flags-panel .flag-topdeal a
+{
+	background:url(/bikecontent/bikesales/results/top_deals_icon.gif) no-repeat;
+	display:block;
+	height:26px;
+	margin:5px 5px 5px 0;
+	width:58px;
+}
+/* listing - stock */
+.stock-listing .listing .item
+{
+    min-height:100px; _height:100px;
+}
+.stock-listing .listing .prices
+{
+	float:right;
+	text-align:right;
+}
+.stock-listing .listing .prices strong
+{
+	font-size:18px;
+}
+.stock-listing .listing .prices p
+{
+	color:#54A1E2;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.stock-listing .listing .thumb
+{
+	border:solid 3px #fff;
+	float:left;
+	font-size:8px;
+	margin-right:5px;
+}
+.stock-listing .listing .no-image
+{
+	float:left;
+	margin-right:5px;
+	/*width:80px;*/
+}
+.stock-listing .listing h2,
+.stock-listing .listing ul,
+.stock-listing .listing .secondaryPrice
+{
+    margin-left:130px;
+    margin-right:200px;
+}
+.stock-listing .listing .secondaryPrice
+{
+	background:url(/bikecontent/bikesales/item_arrow_icon.gif) no-repeat left center;
+	margin-top:5px;
+	padding:0 10px;
+}
+.stock-listing .listing .certs
+{
+	clear:left;
+	margin:0 200px 0 10px;
+}
+.stock-listing .listing .premium
+{
+	background-color:#F0F0F0;
+	min-height:160px; _height:160px;
+	padding:0;
+}
+.stock-listing .listing .premium:hover
+{
+	background-color:#ddd;
+}
+.stock-listing .listing .premium h2
+{
+	background-color:#707070;
+	color:#fff;
+	margin:0 0 10px;
+	padding:4px;
+}
+.stock-listing .listing .premium ul,
+.stock-listing .listing .premium .secondaryPrice
+{
+	clear:left;
+	margin:0 0 0 10px;
+	padding-top:5px;
+	zoom:1;
+}
+.stock-listing .listing .premium .prices
+{
+	margin-right:10px;
+}
+.stock-listing .listing .premium .thumb
+{
+	margin-left:10px;
+	margin-right:0;
+}
+/* listing - accessories */
+.accessories-listing .listing .item
+{
+    min-height:100px; _height:100px;
+}
+.accessories-listing .listing h3,
+.accessories-listing .listing ul
+{
+    margin-left:130px;
+    margin-right:165px;
+}
+.accessories-listing .listing li
+{
+	display:block;
+	zoom:1;
+}
+.accessories-pdf .PriceNow,
+.accessories-details .details-price .PriceNow,
+.accessories-listing .price .PriceNow
+{
+    display: none;   
+}
+.accessories-listing .listing .price 
+{
+    float:right;
+    margin-right:5px;
+}
+.accessories-listing .listing .price,
+.accessories-listing .listing .price span,
+.accessories-listing .listing .price abbr
+{
+	font-size:18px;
+}
+.accessories-listing .listing .price abbr
+{
+	border-bottom:0;
+}
+.accessories-listing .listing .desc img 
+{
+    float:left;
+}
+.accessories-listing .listing .premium .desc
+{
+	clear:left;
+}
+.accessories-listing .listing .premium
+{
+	background-color:#F0F0F0;
+}
+.accessories-listing .listing .premium h3,
+.accessories-listing .listing .premium ul
+{
+	clear:left;
+	margin-left:0;
+}
+.accessories-listing .listing .premium .photos
+{
+	float:left;
+	margin-right:140px;
+}
+.accessories-listing .listing .premium img
+{
+	height:auto;
+	margin:0 5px 5px 0;
+}
+/* ===LISTING end=== */
+/* ===DETAILS start=== */
+/* details header */
+.main-details-container
+{
+	margin-top:5px;
+}
+.main-details
+{
+	border:solid 2px #000;
+	padding:4px;
+	width:450px;
+}
+.databyredbook
+{
+	background: url(/carcontent/green/details/data_by_redbook.jpg) no-repeat top right;
+	height:70px;
+	width:100%;
+}
+.details .title-panel
+{
+	float:left;
+	margin-left:4px;
+	_display:inline; /* IE6 margin doubling bug */
+}
+.details .price-info-panel
+{
+	clear:both;
+	margin:4px 0;
+	text-align:right;
+}
+.details .PriceType 
+{
+	color:#54A1E2;
+	cursor:pointer;
+	font-weight:bold;
+	text-decoration:underline;
+}
+.details-container .rbModuleTitleTxt
+{
+    background-color:#000;
+    color:#fff;
+    font-weight:bold;
+    padding:5px;
+}
+.details-container .details, 
+.details-container .photo-gallery
+{
+	margin:4px;
+}
+.details-title H1
+{
+	display:inline;
+	float:left;
+	font-size:15px;
+	margin:0;
+}
+.details-price
+{
+	display:inline;
+	float:right;
+	font-size:15px;
+	font-weight:bold;
+}
+.csnavigationtable
+{
+	border-top:solid 1px #ccc;
+	clear:both;
+	height:14px;
+	padding:2px 0;
+}
+.csnavigationtable span
+{
+}
+.csnavigationtable a
+{
+	font-size:11px;
+	color:#0169C0;
+}
+.csnavigationtable .prev a
+{
+	background:url(/carcontent/powersearch/icons.gif) no-repeat 0 0;
+	float:left;
+	margin-left:4px;
+	padding-left:15px;	
+}
+.csnavigationtable .next a
+{
+	background:url(/carcontent/powersearch/icons.gif) no-repeat 85px -22px;
+	margin-right:4px;
+	padding-right:15px;	
+}
+.relatedLink-panel
+{
+	clear:both;
+	float:left;
+	text-align:center;
+	width:100%;
+}
+.relatedLink-panel a
+{
+	color:#4E8A11;
+}
+/* properties */
+.details-container .Asterisk
+{	
+	display:inline !important;
+}
+.detail-properties .captcha
+{
+    background: url(/bikecontent/bikesales/details/icon_mobile.gif) no-repeat left 5px;
+    padding: 15px 0px 0px 30px;	
+    height: 40px;
+}
+.detail-properties table
+{
+	border-collapse:collapse;
+	border-spacing:0;
+	width:100%;
+	*display:block;
+	padding:0;
+}
+.detail-properties td
+{
+	padding:2px 2px 2px 5px;
+}
+.detail-properties .prop-list .item-alt, .detail-properties tr.alt
+{
+	background-color:#F0F0F0;
+}
+.detail-properties table.prop-list td
+{
+	padding:1px;
+}
+.detail-properties table.prop-list .label, .detail-properties td.term
+{
+	font-weight:bold;
+	padding-left:4px;
+	width:120px;
+}
+.detail-properties table.prop-list .value .comment
+{
+	overflow:hidden;
+	width:260px;
+}
+.detail-properties div.prop-list td
+{
+	width:50%;
+}
+.detail-properties .prop-header
+{
+	background-color:#000;	
+	color:#FFF;
+	padding:5px;
+}
+.detail-properties .prop-header .content
+{
+	font-weight:bold;
+	text-transform:capitalize;
+}
+.detail-properties .prop-header .content SPAN
+{
+	color:#000;
+	font-size:11px;
+	font-weight:normal;
+	text-transform:none;
+	margin-left:10px;
+	white-space:nowrap;
+}
+.detail-properties .cslistlinkdap a
+{
+	color:#f00;
+	cursor:pointer;
+	font-size:11px;
+}
+/* details photo */
+.photo-gallery .photo-header,
+.photo-gallery .photo-count
+{
+	display:none;
+}
+.photo-gallery .photo-main
+{
+	float:left;
+}
+.photo-gallery .photo-main a img
+{
+	border:solid 1px silver;
+    width:265px;
+}
+.photo-gallery .photo-main a:hover img
+{
+	border:solid 1px orange;
+}
+.photo-gallery .photo-thumb
+{
+	float:right;
+    text-align:left;
+    width:170px;
+}
+.photo-gallery .photo-thumb a img
+{
+	border:solid 1px silver;
+	height:35px;
+	margin:1px;	
+	width:52px;
+}
+.photo-gallery .photo-thumb a:hover img
+{
+	border:solid 1px orange;
+}
+.photo-gallery .photo-thumb a.selected
+{
+    border:solid 1px red;
+}
+.photo-gallery .photo-stock-note
+{
+	clear:both;
+	font-size:11px;
+	margin:2px 4px;
+	text-align:left;
+}
+/* photo gallery popup */
+body.popup-page
+{
+	background:none;
+	margin:0;
+}
+.popup-page .details .details-title
+{
+	width:500px;
+}
+.popup-page .relatedLink-panel
+{
+	display:none;
+}
+.popup-page .header-logo
+{
+}
+.popup-page .footer-text
+{
+	font-size:11px;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.photo-gallery-popup .photo-count
+{
+	display:none;
+}
+.photo-gallery-popup .photo-header
+{
+	display:block;
+}
+.photo-gallery-popup .photo-header .content
+{
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	text-align: center;
+}
+.photo-gallery-popup .photo-main
+{
+	text-align:center;
+	padding:5px;
+	padding-bottom:10px;
+}
+.photo-gallery-popup .photo-main img
+{
+	border:1px solid silver !important;
+}
+.photo-gallery-popup .photo-thumb
+{
+	margin-top:10px;
+}
+.photo-gallery-popup .photo-thumb a
+{
+	padding:1px;
+}
+.photo-gallery-popup .photo-thumb img
+{
+	border:1px solid silver !important;
+	height:40px;
+	width:60px;
+}
+.photo-gallery-popup .photo-thumb .selected img
+{
+	border:1px solid red !important;
+}
+.photo-gallery-popup .photo-thumb a:hover img
+{
+	border:1px solid orange !important;
+}
+.photo-gallery-popup .photo-stock-note
+{
+	float:left;
+	font-size:11px;
+	margin-top:-104px;
+	width:100%;
+}
+html > /**/ body .photo-gallery-popup .photo-stock-note
+{
+	bottom:158px;
+}
+.photo-navigation
+{
+	margin-top:5px;
+}
+.photo-navigation TABLE
+{
+	width:100%;
+}
+.photo-navigation TABLE .buttons
+{
+	width:300px;
+}
+.photo-navigation a
+{
+	background:transparent url(/carcontent/powersearch/photo_navigation.gif) no-repeat 0 0;
+	display:block;
+	float:left;
+	height:22px;
+	text-indent:-10000px;
+	outline:none;
+	width:70px;
+}
+.photo-navigation .button-prev
+{
+}
+.photo-navigation .button-prev:hover
+{
+	background-position: 0 -22px;
+}
+.photo-navigation .button-next
+{
+	background-position: -70px 0;
+}
+.photo-navigation .button-next:hover
+{
+	background-position: -70px -22px;
+}
+.photo-navigation .button-play
+{
+	background-position: -140px 0;
+}
+.photo-navigation .button-play:hover
+{
+	background-position: -140px -22px;
+}
+.photo-navigation .button-close
+{
+	background-position: -211px 0;
+}
+.photo-navigation .button-close:hover
+{
+	background-position: -211px -22px;
+}
+.photo-navigation .button-stop
+{
+	background-position: -140px 0;
+}
+.photo-navigation .button-stop:hover
+{
+	background-position: -140px -22px;
+}
+
+/* details - bike connect */
+.bikeConnectContainer .bikeConnectPhoneNumber
+{
+    display: block;  
+    padding-top:3px; 
+}
+.bikeConnectContainer .bikeConnectBikeCode,
+.bikeConnectContainer .bikeConnectBikeCodeTitle
+{
+    color: red;   
+}
+
+.bikeConnectContainer .bikeConnectBikeCode
+{
+    font-weight: bold;
+}
+
+.bikeConnectContainer .bikeConnectImage
+{
+    display: block;
+    float: left;
+    background: transparent url(/bikecontent/bikesales/details/icon_mobile.gif);
+    height:34px;
+    width: 23px;
+    margin-right: 3px;
+}
+/* Enquiry form */
+.EnquiryForm
+{
+    background:#efefef url(/bikecontent/bikesales/dsl_enquiry_bg.gif) repeat-x;    
+	font-size:11px;
+	padding:10px;
+	margin-left:5px;
+}
+.EnquiryForm h3,
+.EnquiryForm p,
+.EnquiryForm fiendset,
+.EnquiryForm legend,
+.EnquiryForm dl,
+.EnquiryForm dt,
+.EnquiryForm dd,
+.EnquiryForm ul,
+.EnquiryForm li
+{
+	margin:0;
+	padding:0;
+}
+.EnquiryForm h3
+{
+	background:url(/bikecontent/bikesales/dsl_enquiry_icon.gif) no-repeat;
+	display:block;
+	font-size:12px;
+	line-height:43px;
+	outline-style:none;
+	padding-left:60px;
+}
+.EnquiryForm p
+{
+	font-size:11px;
+}
+.EnquiryForm fieldset
+{
+	border-width:0;
+	font-size:11px;
+	margin-bottom:10px;
+}
+.EnquiryForm legend
+{
+	text-align:left;
+}
+.EnquiryForm sup
+{
+	vertical-align:top;
+	margin-left:2px;
+}
+.EnquiryForm dl
+{
+	margin-bottom:2px;
+}
+.EnquiryForm dt
+{
+	float:left;
+	font-size:11px;
+	margin-top:2px;
+	width:65px;
+}
+.EnquiryForm dd input, 
+.EnquiryForm dd textarea
+{
+	border:solid 1px #ccc;
+	font-size:11px;
+	width:120px;
+}
+.EnquiryForm .postcode input
+{
+	width: 45px;
+}
+.EnquiryForm .comments dt
+{
+	float:none;
+	width:auto;
+}
+.EnquiryForm .comments textarea
+{
+	border:solid 1px #ccc;
+	font-size:11px;
+	width:190px;
+}
+.EnquiryForm .tradein LEGEND
+{
+    font-size:13px;
+    font-weight:bold;
+    *margin-left:-7px;
+}
+.EnquiryForm .tradein ul
+{
+	display:table;
+	list-style-type:none;
+}
+.EnquiryForm .tradein li
+{
+	display:table-cell;
+	float:left;
+}
+.EnquiryForm .tradein .col1
+{
+	width:100px;
+	margin-right:15px;
+}
+.EnquiryForm .tradein .col2
+{
+	width:60px;
+}
+.EnquiryForm .tradein dt
+{
+	float:none;
+}
+.EnquiryForm .tradein input
+{
+	width:100%;
+}
+.EnquiryForm .button
+{
+	margin:4px auto;
+	text-align:center;
+	width:142px;
+}
+.EnquiryForm .button a
+{
+	background:url(/bikecontent/bikesales/dsl_send_enquiry_btn.gif) no-repeat;
+	display:block;
+	font-size:0;
+	height:38px;
+	line-height:1px;
+	outline-style:none;
+	text-align:center;
+	text-indent:-1000em;
+	width:142px;
+}
+.EnquiryForm .error
+{
+	border:solid 1px #AA0000;
+	color:#a00;
+	margin:8px;
+	padding:8px;
+}
+.EnquiryForm .error span
+{
+	background: url(/images/ErrorIcon.gif) no-repeat left 4px;
+	padding-left: 40px;
+	display: block;
+	font-size: 11px;
+}
+.EnquiryForm .error ul
+{
+	font-size: 11px;
+	margin: 4px 0;
+	padding-left: 14px;
+}
+.EnquiryForm .thankyou
+{
+	height:370px;
+	padding:20px 10px;
+}
+.EnquiryForm .thankyou p
+{
+	font-size:12px;
+	margin:10px 0;
+}
+/* print page */
+body.print-page
+{
+	background:none;
+	margin:0 auto;
+	width:800px;
+}
+body.print-page form > table
+{
+}
+body.print-page .entry-title
+{
+	font-size:16px;
+}
+body.print-page .details .title-panel
+{
+	width: auto;
+}
+body.print-page .relatedLink-panel
+{
+	display:none;
+}
+body.print-page .detail-properties div.prop-list td
+{
+	width: 33%;
+}
+body.print-page .detail-properties table.prop-list .value .comment
+{
+	width: auto;
+}
+body.print-page .vehicle-comments .detail-properties table.prop-list .value .comment
+{
+	width: auto;
+}
+body.print-page .photo-gallery .photo-main
+{
+	clear:both;
+	float:left;
+	margin:0 4px 0 0;
+}
+body.print-page .photo-gallery .photo-main img
+{
+	width:400px;
+}
+body.print-page .photo-gallery .photo-thumb
+{
+	float:left;
+	width:380px;
+	margin:0;
+}
+body.print-page .photo-gallery .photo-thumb img
+{
+	margin:0 4px 4px 0;
+	width:90px;
+}
+body.print-page .csnavigationtable
+{
+	clear:both;
+}
+body.print-page .csnavigationtable span
+{
+	display:none;
+}
+body.print-page .print-review .photo-gallery
+{
+	margin: 4px auto;
+}
+body.print-page .print-review .photo-gallery .photo-main
+{
+	float:none;
+	width: 100%;
+}
+body.print-page .print-review .photo-gallery .photo-main img
+{
+	width:150px;
+	margin:0 4px 4px 0;
+}
+/* send to friend */
+.emailafriend .EmailAFriendButton
+{
+	display:block;
+	background: url(/bikecontent/bikesales/results/send_to_friend_btn.gif) no-repeat;
+	width:100px;
+	height:19px;
+	outline-style:none;
+	text-indent:-10000px;
+	float:left;
+	margin:5px 5px 0 0;
+}
+/* pdf page */
+.pdfpage .prvdet
+{
+	display:none;
+}
+.pdfpage .photo-gallery .photo-main
+{
+	margin-top:10px;
+}
+.pdflink .PdfButton
+{
+	display:block;
+	background: url(/bikecontent/bikesales/results/printable_view_btn.gif) no-repeat;
+	width:100px;
+	height:19px;
+	text-indent:-10000px;
+	outline-style:none;
+	float:left;	
+	margin:5px 5px 0 0;
+}
+.backtoresults .backlink
+{
+	display:block;
+	background: url(/bikecontent/bikesales/results/back_to_results_btn.gif) no-repeat;
+	width:100px;
+	height:19px;
+	text-indent:-10000px;
+	float:left;	
+	margin:5px 5px 0 0;
+	outline-style:none;
+}
+/* accessories details & pdf  */
+.accessories-details .photo-gallery .photo-main a img
+{
+    width:266px;
+}
+
+.accessories-pdf .details-price span,
+.accessories-details .details-price span
+{
+    font-size: 15px;
+}
+
+.accessories-details .csnavigationtable
+{
+    padding-top: 5px;
+}
+
+.accessories-pdf .details
+{
+    min-height: 20px;
+}
+
+.accessories-pdf .title-panel,
+.accessories-pdf .price-panel
+{
+    margin-bottom: 5px;  
+}
+/* ===DETAILS end=== */
