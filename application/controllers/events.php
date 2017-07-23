@@ -25,7 +25,7 @@ class events extends CI_Controller_EX
 	{
 		$day=$this->input->get('day');
 		$asc=$this->input->get('asc');
-		
+
 		$data = new stdClass;
 		$session_data = $this->session->userdata('logged_in');
 		$data->asc = ($asc==FALSE)?0:1;
@@ -42,15 +42,15 @@ class events extends CI_Controller_EX
 				(
 					array
 					(
-						"objectId" => "Event",	
+						"objectId" => "Event",
 						'query'=>'{"deletedAt":null}',
-						'order'=>$asc				
+						'order'=>$asc
 					)
 				);
-				$data->day = "";				
+				$data->day = "";
 			}
 			else{
-				
+
 				$dayCount = -1 * $day;
 				$date = date(DateTime::ISO8601, strtotime($dayCount . ' days'));
 				//$date = "2017-06-01T00:00:00.000Z";
@@ -58,14 +58,14 @@ class events extends CI_Controller_EX
 				(
 					array
 					(
-						"objectId" => "Event",	
+						"objectId" => "Event",
 						//'query'=>'{"deletedAt":null, "createdAt":{"$gt":"'.$date.'"}}',
 						'query'=>'{"deletedAt":null, "createdAt":{"$gte":{"__type":"Date","iso":"' . $date .'"}}}',
 						'order'=>$asc,
 						//'limit'=>intval($day),
 					)
 				);
-				$data->day = $day;				
+				$data->day = $day;
 			}
 
 			$data->info = json_decode(json_encode($temp), true);
@@ -97,7 +97,6 @@ class events extends CI_Controller_EX
 	                "query" =>  '{"targetEvent":{"__type":"Pointer","className":"Event","objectId":"'. $event_id . '"}}'
 	            )
             );
-
 			$this->load->view('default/events/view', $data);
 		}
 		else
@@ -105,7 +104,7 @@ class events extends CI_Controller_EX
 		    $this->load->view('default/include/manage/v_login');
 		}
 	}
-	
+
 	public function eventdelete()
 	{
 		$deletelist = $this->input->post('deletelist');
@@ -121,7 +120,7 @@ class events extends CI_Controller_EX
 				)
         	);
 		}
-		
+
 	}
 	public function deletedevents(){
 		$data = new stdClass;
@@ -131,10 +130,10 @@ class events extends CI_Controller_EX
 				(
 					array
 					(
-						"objectId" => "Event",	
+						"objectId" => "Event",
 						//'query'=>'{"deletedAt":null}',
 
-						'query'=>'{"deletedAt":{"$ne":null}}'		
+						'query'=>'{"deletedAt":{"$ne":null}}'
 					)
 				);
 			$data->username = $session_data['username'];
@@ -149,7 +148,7 @@ class events extends CI_Controller_EX
 		{
 			$this->load->view('default/include/manage/v_login');
 		}
-		
+
 	}
 
 
@@ -163,10 +162,10 @@ class events extends CI_Controller_EX
 				(
 					array
 					(
-						"objectId" => "EventComment",	
-						//'query'=>'{"deletedAt":null}',	
+						"objectId" => "EventComment",
+						//'query'=>'{"deletedAt":null}',
 						//'query'=>'{"targetEvent":"'.$id.'"}'
-						"query" =>  '{"targetEvent":{"__type":"Pointer","className":"Event","objectId":"'. $id . '"}}'		
+						"query" =>  '{"targetEvent":{"__type":"Pointer","className":"Event","objectId":"'. $id . '"}}'
 					)
 				);
 			$temp_event = $this->parserestclient->query
@@ -175,7 +174,7 @@ class events extends CI_Controller_EX
 					(
 						"objectId" => "Event",
 						//'query'=>'{"objectId":{"$all":"'.$id.'"}}',
-						//'query'=>'{"deletedAt":null}',	
+						//'query'=>'{"deletedAt":null}',
 						'query'=>'{"objectId":"'.$id.'"}'
 						//"query" =>  '{"targetEvent":{"__type":"Pointer","className":"Event","objectId":"'. $id . '","__op":"Add","objects":["totalCount","location"]}}'
 					)
@@ -186,7 +185,7 @@ class events extends CI_Controller_EX
 					(
 						"objectId" => "Event",
 						//'query'=>'{"objectId":{"$all":"'.$id.'"}}',
-						//'query'=>'{"deletedAt":null}',	
+						//'query'=>'{"deletedAt":null}',
 						//'query'=>'{"objectId":"'.$id.'"}'
 						"query" =>  '{"targetEvent":{"__type":"Pointer","className":"Event","objectId":"'. $id . '","__op":"Add","objects":["totalCount","location"]}}'
 					)

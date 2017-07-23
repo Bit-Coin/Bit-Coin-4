@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php
+        echo "here is the view part";
+
+
+?>
 <html lang="en">
 	<?php $this->load->view('default/head/console_page.php'); ?>
 	<link rel="stylesheet" href="<?php echo base_url('public') ?>/css/events.css" />

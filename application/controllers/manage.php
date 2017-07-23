@@ -148,7 +148,7 @@ class manage extends CI_Controller_EX {
     $data = new stdClass;
     $function_name = "CLIENT MANAGEMENT CONSOLE";
     $data->links = array('logout' => 'Logout');
-    
+
     $this->check_login($data, $function_name);
   }
 
@@ -156,7 +156,7 @@ class manage extends CI_Controller_EX {
     $session_data = $this->session->userdata('logged_in');
     $data = new stdClass;
     $function_name = "SUPPORT REQUEST";
-    
+
     $this->check_login($data, $function_name);
   }
 
@@ -183,12 +183,12 @@ class manage extends CI_Controller_EX {
     $config['newline'] = "\r\n";
 
     $ci->email->initialize($config);
-    $ci->email->from($this->input->post('emailto'), $session_data['username']);          
+    $ci->email->from($this->input->post('emailto'), $session_data['username']);
     $ci->email->to('support@visitechmgmt.zendesk.com');
     $this->email->reply_to($this->input->post('emailto'), $session_data['username']);
     $ci->email->subject($this->input->post('priority'));
     $ci->email->message($this->input->post('des'));
-    
+
     if($_FILES['upload']['size'] > 0) { // upload is the name of the file field in the form
       $aConfig['upload_path']      = 'public/images';
       // chmod('public/images', 777);
@@ -196,14 +196,14 @@ class manage extends CI_Controller_EX {
       $aConfig['max_size']     = '3000';
       $aConfig['max_width']        = '1280';
       $aConfig['max_height']       = '1024';
-      $this->load->library('upload',$aConfig); 
+      $this->load->library('upload',$aConfig);
       $this->upload->do_upload('upload');
-      $ret = $this->upload->data(); 
+      $ret = $this->upload->data();
       $pathToUploadedFile = $ret['full_path'];
-      $this->email->attach($pathToUploadedFile);    
+      $this->email->attach($pathToUploadedFile);
     }
 
-    $this->email->send();    
+    $this->email->send();
 //var_dump($this->email->print_debugger());
     $data = new stdClass;
     $function_name = "Content Manager";
@@ -464,7 +464,7 @@ class manage extends CI_Controller_EX {
     }
     else if($role == 2) {
       $function_name = "APPLICATION ADMINISTRATOR CONSOLE MENU";
-      $data->links = array('dashboard' => 'Management Dashboard', 'client_set_up' => 'Client Set Up/ Upload / Editing', 
+      $data->links = array('dashboard' => 'Management Dashboard', 'client_set_up' => 'Client Set Up/ Upload / Editing',
       'activity_setup_management' => 'Activity Setup and Management', 'user_data_management' => 'User Data Management and Export',
       'console_manager' => 'Console Manager', 'app_administrator_user' => 'Users', 'manage_report_content' => 'Mange Reported Content', 'logout' => 'Logout');
     }
@@ -607,6 +607,8 @@ class manage extends CI_Controller_EX {
         $data->username = $session_data['username'];
         $data->role = $session_data['role'];
         $data->id = $session_data['id'];
+        $this->load->model('M_events');
+        $data->info = $this->M_events->get_all();
         $data->function_name = "VIEW OR EDIT GLOBAL EVENT LIST";
         $this->load->view('default/events/list', $data);
     }
